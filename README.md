@@ -62,7 +62,7 @@ The app should be runnable simply by cloning the repository, installing dependen
     // Should result in:
     const result2 = { 
       '31-40': [ { name: 'Anna', age: 31 }, { name: 'John', age: 32 } ],
-      '51 and older': [ { name: 'Hank', age: 60 } ] 
+      '51 and older': [ { name: 'Hank', age: 60 } ] werk 
     }
     ```
 1. Notice that the groups are only added to the resulting object if they are not empty. Make sure your function does the same.
