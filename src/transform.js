@@ -23,13 +23,13 @@ console.log(adults);
 });
 
 const result = groupAdultsByAgeRange.filter(adults => (adults.age < 19))
+
 const result2 = groupAdultsByAgeRange.filter(adults => (adults.age >= 19))
 
 const groupAge = groupAdultsByAgeRange.reduce((currentTotal, groupAdultsByAgeRange)=>{
     return groupAdultsByAgeRange.age + currentTotal
 }, 0)
 
-console.log(groupAge);
 
 // const result3 = groupAdultsByAgeRange.filter(adults => (adults.age >= 31 && adults.age <= 40 ))
 // const result4 = groupAdultsByAgeRange.filter(adults => (adults.age >= 41 && adults.age <= 50 ))
@@ -42,10 +42,6 @@ console.log(result2);
 // console.log(result4);
 // console.log(result5);
 
-
-
-
-// const groupAdults = groupAdultsByAgeRange.filter(adult => adult.name.age);
 
 module.exports.groupAdultsByAgeRange = function groupAdultsByAgeRange() {
     groupAdultsByAgeRange
