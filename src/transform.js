@@ -22,8 +22,8 @@ groupAdultsByAgeRange.forEach(function (adults) {
 console.log(adults);
 });
 
-const result = groupAdultsByAgeRange.filter(adults => (adults.age < 21))
-const result2 = groupAdultsByAgeRange.filter(adults => (adults.age >= 21))
+const result = groupAdultsByAgeRange.filter(adults => (adults.age < 19))
+const result2 = groupAdultsByAgeRange.filter(adults => (adults.age >= 19))
 
 const groupAge = groupAdultsByAgeRange.reduce((currentTotal, groupAdultsByAgeRange)=>{
     return groupAdultsByAgeRange.age + currentTotal
